@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Модели Летательных Аппаратов</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Добро пожаловать на демонстрацию 3D моделей Летательных Аппаратов!</h1>
+            <blockquote>"Будущее авиации — это не просто технологии, это страсть к полетам."</blockquote>
+            <img src="plane_image.jpg" alt="Самолет" class="header-image">
+        </div>
+    </header>
+
+    <section class="model-selector">
+        <label for="aircraft-select">Выберите модель самолёта:</label>
+        <select id="aircraft-select">
+            <option value="plane1">Самолёт 1</option>
+            <option value="plane2">Самолёт 2</option>
+            <option value="plane3">Самолёт 3</option>
+        </select>
+    </section>
+
+    <section class="3d-model">
+        <div id="model-container"></div>
+        <div class="controls">
+            <button id="start-animation">Запуск анимации</button>
+            <input type="range" id="animation-speed" min="0" max="100" value="50">
+        </div>
+    </section>
+
+    <section class="info">
+        <h2>Информация о выбранной модели</h2>
+        <p>Технические характеристики: …</p>
+        <p>История: …</p>
+        <p>Чертежи: …</p>
+    </section>
+
+    <footer>
+        <div>
+            <p>Автор: Иван Иванов</p>
+            <p>Контакты: <a href="mailto:ivan@example.com">ivan@example.com</a></p>
+            <p>Социальные сети: <a href="https://vk.com/ivan" target="_blank">VK</a> | <a href="https://twitter.com/ivan" target="_blank">Twitter</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
